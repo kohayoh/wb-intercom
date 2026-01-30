@@ -47,5 +47,6 @@ dependencies {
   implementation "androidx.media3:media3-ui:${media3}"
 
   implementation "androidx.constraintlayout:constraintlayout:2.2.0"
+implementation "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5"
 
 }
