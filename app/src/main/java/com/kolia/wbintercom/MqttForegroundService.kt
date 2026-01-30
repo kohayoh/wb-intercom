@@ -20,10 +20,13 @@ class MqttForegroundService : Service() {
     startForeground(1001, buildNotification("WB Intercom: waiting for doorbell"))
 
     // Поднимаем MQTT и реагируем на doorbell (пока через обновление уведомления)
-    mqtt = MqttManager(this) {
-      val nm = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-      nm.notify(1001, buildNotification("WB Intercom: DOORBELL!"))
-    }
+mqtt = MqttManager(this) {
+  val i = Intent(this, IncomingCallActivity::class.java).apply {
+    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+  }
+  startActivity(i)
+}
+
     mqtt?.start()
   }
 
