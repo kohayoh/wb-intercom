@@ -6,7 +6,7 @@ class Prefs(ctx: Context) {
   private val sp = ctx.getSharedPreferences("wb_intercom", Context.MODE_PRIVATE)
 
   var mqttHost: String
-    get() = sp.getString("mqtt_host", "192.168.1.18") ?: "192.168.1.18"
+    get() = sp.getString("mqtt_host", "192.168.1.51") ?: "192.168.1.51"
     set(v) = sp.edit().putString("mqtt_host", v).apply()
 
   var mqttPort: Int
