@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     val btn = findViewById<Button>(R.id.btnPlay)
 
     // можно сразу подставить твой поток, чтобы не вводить каждый раз:
-    // et.setText("rtsp://admin:123456@192.168.0.213:554/stream1")
+    et.setText("rtsp://admin:123456@192.168.1.18:554/stream1")
 
     btn.setOnClickListener {
       val rtsp = et.text.toString().trim()
