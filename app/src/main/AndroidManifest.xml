@@ -5,7 +5,7 @@
   <application
     android:label="WB Intercom"
     android:supportsRtl="true"
-    android:theme="@style/Theme.WBIntercom">    >
+    android:theme="@style/Theme.WBIntercom">
 
     <activity
       android:name=".MainActivity"
