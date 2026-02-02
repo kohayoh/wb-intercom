@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168831333674",
+    "project_id": "wbintercom-b03cf",
+    "storage_bucket": "wbintercom-b03cf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168831333674:android:73d3b9c231e5aca577da53",
+        "android_client_info": {
+          "package_name": "com.kolia.wbintercom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLYsa-7hoSw9aeskQ7gAfHB1Y-J06apEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
